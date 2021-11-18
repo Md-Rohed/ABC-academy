@@ -25,8 +25,37 @@
           </p>
 
           <button class="btn">Read More</button>
+          <div class="line">
+            <span class="line-1"></span> <br />
+            <span class="line-2"></span> <br />
+            <span class="line-3"></span>
+          </div>
         </div>
       </div>
     </section>
+
+    <nav id="sideNav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+
+      <img src="./images/menu.png" id="menuBtn" alt="" />
+
+      <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-300px";
+        menuBtn.onclick = function () {
+          if (sideNav.style.right == "-300px") {
+            sideNav.style.right = "0";
+          } else {
+            sideNav.style.right = "-300px";
+          }
+        };
+      </script>
+    </nav>
   </body>
 </html>
